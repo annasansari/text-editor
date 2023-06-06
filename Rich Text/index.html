@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">    -->
+    <script src="https://kit.fontawesome.com/e125e2b600.js" crossorigin="anonymous"></script>
+    <!-- <script src="app.js" defer></script> -->
+</head>
+<body>
+    
+    <div class="container">
+        <div class="main" action="">
+            <button class="btn-right" onclick="rightAlign()">
+                <i class="fa-solid fa-align-right icon-right"></i>
+            </button>
+            <button class="btn-center" onclick="centerAlign()">
+                <i class="fa-solid fa-align-center icon-center"></i></button>
+                <button class="btn-center" onclick="leftAlign()">
+                    <i class="fa-solid fa-align-left icon-left"></i></button>
+                    <button class="btn_bold" onclick="bold()">
+                        <i class="fa-solid fa-bold bold_icon"></i>
+                    </button>
+                    <button class="btn_italic" onclick="italic()">
+            <i class="fa-solid fa-italic icon_italic"></i>
+        </button>
+        <button class="btn_ul" onclick="ulText()">
+            <i class="fa-solid fa-underline icon_ul"></i>
+        </button>
+        <span>
+            <input id="colors" class="colors" type="color">
+        </span>
+        <div class="hr">
+            <hr class="hr-line">
+        </div>
+     
+        <button class="apply" onchange="colors()">Apply</button>
+        <div class="size-heading">
+            <h3 class="size">Font Size:</h3>
+        </div>
+        <button onclick="fontSize10()">10</button>
+        <button onclick="fontSize20()">20</button>
+        <button onclick="fontSize30()">30</button>
+        <button onclick="fontSize40()">40</button>
+        <button onclick="fontSize50()">50</button>
+
+        <div class="fontHeading">
+            <h2 class="fontStyle">Font Style:</h2>
+        </div>
+
+        <!-- <select class="fontFamily" name="" id=""> -->
+            <button class="myBtn" onclick="cursive()"><option value="">Cursive</option></button>
+            <button class="myBtn" onclick="tahoma()"><option value="">Tahoma</option></button>
+            <button class="myBtn" onclick="verdana()"><option value="">Verdana</option></button>
+            <button class="myBtn" onclick="sansSerif()"><option value="">san-serif</option></button>
+            <button class="myBtn" onclick="monospace()"><option value="">Monospace</option></button>
+        <!-- </select> -->
+    </div>
+<input class="text-area" id="textPaste" type="text">    
+</body> 
+</html>
